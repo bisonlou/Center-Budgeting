@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDonorContribution" targetNamespace="http://tempuri.org/dsDonorContribution.xsd" xmlns:mstns="http://tempuri.org/dsDonorContribution.xsd" xmlns="http://tempuri.org/dsDonorContribution.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="palIntCentreBudgetsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="palIntCentreBudgetsConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CentreBudgeting.My.MySettings.GlobalReference.Default.palIntCentreBudgetsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DonorContributionTableAdapter" GeneratorDataComponentClassName="DonorContributionTableAdapter" Name="DonorContribution" UserDataComponentName="DonorContributionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="palIntCentreBudgetsConnectionString (MySettings)" DbObjectName="palIntCentreBudgets.dbo.DonorContribution" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Account, [Desc], GOU, TTI, [WORLD BANK], [ARK PEAS], EPRC, BERKELEY, INCLUDE, KAPSARC, Sussex, IPPF, FAO, AGRA, IISD, [EU-SPEED], UNICEF FROM dbo.DonorContribution</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Account" DataSetColumn="Account" />
+              <Mapping SourceColumn="Desc" DataSetColumn="Desc" />
+              <Mapping SourceColumn="GOU" DataSetColumn="GOU" />
+              <Mapping SourceColumn="TTI" DataSetColumn="TTI" />
+              <Mapping SourceColumn="WORLD BANK" DataSetColumn="WORLD BANK" />
+              <Mapping SourceColumn="ARK PEAS" DataSetColumn="ARK PEAS" />
+              <Mapping SourceColumn="EPRC" DataSetColumn="EPRC" />
+              <Mapping SourceColumn="BERKELEY" DataSetColumn="BERKELEY" />
+              <Mapping SourceColumn="INCLUDE" DataSetColumn="INCLUDE" />
+              <Mapping SourceColumn="KAPSARC" DataSetColumn="KAPSARC" />
+              <Mapping SourceColumn="Sussex" DataSetColumn="Sussex" />
+              <Mapping SourceColumn="IPPF" DataSetColumn="IPPF" />
+              <Mapping SourceColumn="FAO" DataSetColumn="FAO" />
+              <Mapping SourceColumn="AGRA" DataSetColumn="AGRA" />
+              <Mapping SourceColumn="IISD" DataSetColumn="IISD" />
+              <Mapping SourceColumn="EU-SPEED" DataSetColumn="EU-SPEED" />
+              <Mapping SourceColumn="UNICEF" DataSetColumn="UNICEF" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDonorContribution" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDonorContribution" msprop:Generator_UserDSName="dsDonorContribution">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DonorContribution" msprop:Generator_TableClassName="DonorContributionDataTable" msprop:Generator_TableVarName="tableDonorContribution" msprop:Generator_TablePropName="DonorContribution" msprop:Generator_RowDeletingName="DonorContributionRowDeleting" msprop:Generator_RowChangingName="DonorContributionRowChanging" msprop:Generator_RowEvHandlerName="DonorContributionRowChangeEventHandler" msprop:Generator_RowDeletedName="DonorContributionRowDeleted" msprop:Generator_UserTableName="DonorContribution" msprop:Generator_RowChangedName="DonorContributionRowChanged" msprop:Generator_RowEvArgName="DonorContributionRowChangeEvent" msprop:Generator_RowClassName="DonorContributionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Account" msprop:Generator_ColumnVarNameInTable="columnAccount" msprop:Generator_ColumnPropNameInRow="Account" msprop:Generator_ColumnPropNameInTable="AccountColumn" msprop:Generator_UserColumnName="Account">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Desc" msprop:Generator_ColumnVarNameInTable="columnDesc" msprop:Generator_ColumnPropNameInRow="Desc" msprop:Generator_ColumnPropNameInTable="DescColumn" msprop:Generator_UserColumnName="Desc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GOU" msprop:Generator_ColumnVarNameInTable="columnGOU" msprop:Generator_ColumnPropNameInRow="GOU" msprop:Generator_ColumnPropNameInTable="GOUColumn" msprop:Generator_UserColumnName="GOU" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTI" msprop:Generator_ColumnVarNameInTable="columnTTI" msprop:Generator_ColumnPropNameInRow="TTI" msprop:Generator_ColumnPropNameInTable="TTIColumn" msprop:Generator_UserColumnName="TTI" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORLD_x0020_BANK" msprop:Generator_ColumnVarNameInTable="columnWORLD_BANK" msprop:Generator_ColumnPropNameInRow="WORLD_BANK" msprop:Generator_ColumnPropNameInTable="WORLD_BANKColumn" msprop:Generator_UserColumnName="WORLD BANK" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ARK_x0020_PEAS" msprop:Generator_ColumnVarNameInTable="columnARK_PEAS" msprop:Generator_ColumnPropNameInRow="ARK_PEAS" msprop:Generator_ColumnPropNameInTable="ARK_PEASColumn" msprop:Generator_UserColumnName="ARK PEAS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EPRC" msprop:Generator_ColumnVarNameInTable="columnEPRC" msprop:Generator_ColumnPropNameInRow="EPRC" msprop:Generator_ColumnPropNameInTable="EPRCColumn" msprop:Generator_UserColumnName="EPRC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BERKELEY" msprop:Generator_ColumnVarNameInTable="columnBERKELEY" msprop:Generator_ColumnPropNameInRow="BERKELEY" msprop:Generator_ColumnPropNameInTable="BERKELEYColumn" msprop:Generator_UserColumnName="BERKELEY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INCLUDE" msprop:Generator_ColumnVarNameInTable="columnINCLUDE" msprop:Generator_ColumnPropNameInRow="INCLUDE" msprop:Generator_ColumnPropNameInTable="INCLUDEColumn" msprop:Generator_UserColumnName="INCLUDE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KAPSARC" msprop:Generator_ColumnVarNameInTable="columnKAPSARC" msprop:Generator_ColumnPropNameInRow="KAPSARC" msprop:Generator_ColumnPropNameInTable="KAPSARCColumn" msprop:Generator_UserColumnName="KAPSARC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Sussex" msprop:Generator_ColumnVarNameInTable="columnSussex" msprop:Generator_ColumnPropNameInRow="Sussex" msprop:Generator_ColumnPropNameInTable="SussexColumn" msprop:Generator_UserColumnName="Sussex" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IPPF" msprop:Generator_ColumnVarNameInTable="columnIPPF" msprop:Generator_ColumnPropNameInRow="IPPF" msprop:Generator_ColumnPropNameInTable="IPPFColumn" msprop:Generator_UserColumnName="IPPF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FAO" msprop:Generator_ColumnVarNameInTable="columnFAO" msprop:Generator_ColumnPropNameInRow="FAO" msprop:Generator_ColumnPropNameInTable="FAOColumn" msprop:Generator_UserColumnName="FAO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AGRA" msprop:Generator_ColumnVarNameInTable="columnAGRA" msprop:Generator_ColumnPropNameInRow="AGRA" msprop:Generator_ColumnPropNameInTable="AGRAColumn" msprop:Generator_UserColumnName="AGRA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IISD" msprop:Generator_ColumnVarNameInTable="columnIISD" msprop:Generator_ColumnPropNameInRow="IISD" msprop:Generator_ColumnPropNameInTable="IISDColumn" msprop:Generator_UserColumnName="IISD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EU-SPEED" msprop:Generator_ColumnVarNameInTable="_columnEU_SPEED" msprop:Generator_ColumnPropNameInRow="_EU_SPEED" msprop:Generator_ColumnPropNameInTable="_EU_SPEEDColumn" msprop:Generator_UserColumnName="EU-SPEED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UNICEF" msprop:Generator_ColumnVarNameInTable="columnUNICEF" msprop:Generator_ColumnPropNameInRow="UNICEF" msprop:Generator_ColumnPropNameInTable="UNICEFColumn" msprop:Generator_UserColumnName="UNICEF" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

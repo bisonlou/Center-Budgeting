@@ -1,0 +1,37 @@
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting.exe.config
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.exe
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.xml
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.pdb
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.vbprojResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.Accounts.resources
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.Connection.resources
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.CreateDB.resources
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.LoginForm.resources
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.Master.resources
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.Resources.resources
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.SplashScreen.resources
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.vbproj.GenerateResource.Cache
+D:\My Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.exe.licenses
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting.exe
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting\Reports\rptBudgetList.rpt
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting\Reports\rptBudgetList.vb
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting.exe.config
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.Accounts.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.Connection.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.CreateDB.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.LoginForm.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.Master.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.ReportOptions.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.ReportViewer.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.Resources.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.SplashScreen.resources
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.vbproj.GenerateResource.Cache
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.exe.licenses
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.exe
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.xml
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.pdb
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting.pdb
+C:\Users\Bison\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting.xml
+C:\Users\BISON\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\obj\Debug\CentreBudgeting.vbprojResolveAssemblyReference.cache
+C:\Users\BISON\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting\Reports\rptBudgetVActual1.rpt
+C:\Users\BISON\Documents\Visual Studio 2013\Projects\CentreBudgeting\CentreBudgeting\bin\Debug\CentreBudgeting\Reports\rptBudgetVActual1.vb

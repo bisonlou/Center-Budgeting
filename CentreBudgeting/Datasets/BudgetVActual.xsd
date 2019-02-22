@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BudgetVActual" targetNamespace="http://tempuri.org/BudgetVActual.xsd" xmlns:mstns="http://tempuri.org/BudgetVActual.xsd" xmlns="http://tempuri.org/BudgetVActual.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="palIntCentreBudgetsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="palIntCentreBudgetsConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CentreBudgeting.My.MySettings.GlobalReference.Default.palIntCentreBudgetsConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="paldbEPRCConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="paldbEPRCConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CentreBudgeting.My.MySettings.GlobalReference.Default.paldbEPRCConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CentreExpenseTableAdapter" GeneratorDataComponentClassName="CentreExpenseTableAdapter" Name="CentreExpense" UserDataComponentName="CentreExpenseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="paldbEPRCConnectionString (MySettings)" DbObjectName="paldbEPRC.dbo.CentreExpense" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT uidCenterID, strLvl1, strLvl2, strLvl3, strDesc, TOTAL, TOTALF, intGLNumber FROM dbo.CentreExpense</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="uidCenterID" DataSetColumn="uidCenterID" />
+              <Mapping SourceColumn="strLvl1" DataSetColumn="strLvl1" />
+              <Mapping SourceColumn="strLvl2" DataSetColumn="strLvl2" />
+              <Mapping SourceColumn="strLvl3" DataSetColumn="strLvl3" />
+              <Mapping SourceColumn="strDesc" DataSetColumn="strDesc" />
+              <Mapping SourceColumn="TOTAL" DataSetColumn="TOTAL" />
+              <Mapping SourceColumn="TOTALF" DataSetColumn="TOTALF" />
+              <Mapping SourceColumn="intGLNumber" DataSetColumn="intGLNumber" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblBudgetsTableAdapter" GeneratorDataComponentClassName="tblBudgetsTableAdapter" Name="tblBudgets" UserDataComponentName="tblBudgetsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="palIntCentreBudgetsConnectionString (MySettings)" DbObjectName="palIntCentreBudgets.dbo.tblBudgets" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[tblBudgets] ([uidCenterID], [strLvl1], [strLvl2], [strLvl3], [strLvl4], [Account], [Desc], [decBudget], [ExchangeRate]) VALUES (@uidCenterID, @strLvl1, @strLvl2, @strLvl3, @strLvl4, @Account, @Desc, @decBudget, @ExchangeRate)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Guid" Direction="Input" ParameterName="@uidCenterID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="0" SourceColumn="uidCenterID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@strLvl1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="strLvl1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@strLvl2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="strLvl2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@strLvl3" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="strLvl3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@strLvl4" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="strLvl4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Account" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Account" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Desc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Desc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@decBudget" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="decBudget" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@ExchangeRate" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="ExchangeRate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT uidCenterID, strLvl1, strLvl2, strLvl3, strLvl4, Account, [Desc], decBudget, ExchangeRate FROM dbo.tblBudgets</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="uidCenterID" DataSetColumn="uidCenterID" />
+              <Mapping SourceColumn="strLvl1" DataSetColumn="strLvl1" />
+              <Mapping SourceColumn="strLvl2" DataSetColumn="strLvl2" />
+              <Mapping SourceColumn="strLvl3" DataSetColumn="strLvl3" />
+              <Mapping SourceColumn="strLvl4" DataSetColumn="strLvl4" />
+              <Mapping SourceColumn="Account" DataSetColumn="Account" />
+              <Mapping SourceColumn="Desc" DataSetColumn="Desc" />
+              <Mapping SourceColumn="decBudget" DataSetColumn="decBudget" />
+              <Mapping SourceColumn="ExchangeRate" DataSetColumn="ExchangeRate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BudgetVActual" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BudgetVActual" msprop:Generator_UserDSName="BudgetVActual">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CentreExpense" msprop:Generator_TableClassName="CentreExpenseDataTable" msprop:Generator_TableVarName="tableCentreExpense" msprop:Generator_RowChangedName="CentreExpenseRowChanged" msprop:Generator_TablePropName="CentreExpense" msprop:Generator_RowDeletingName="CentreExpenseRowDeleting" msprop:Generator_RowChangingName="CentreExpenseRowChanging" msprop:Generator_RowEvHandlerName="CentreExpenseRowChangeEventHandler" msprop:Generator_RowDeletedName="CentreExpenseRowDeleted" msprop:Generator_RowClassName="CentreExpenseRow" msprop:Generator_UserTableName="CentreExpense" msprop:Generator_RowEvArgName="CentreExpenseRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="uidCenterID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnuidCenterID" msprop:Generator_ColumnPropNameInRow="uidCenterID" msprop:Generator_ColumnPropNameInTable="uidCenterIDColumn" msprop:Generator_UserColumnName="uidCenterID" type="xs:string" />
+              <xs:element name="strLvl1" msprop:Generator_ColumnVarNameInTable="columnstrLvl1" msprop:Generator_ColumnPropNameInRow="strLvl1" msprop:Generator_ColumnPropNameInTable="strLvl1Column" msprop:Generator_UserColumnName="strLvl1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strLvl2" msprop:Generator_ColumnVarNameInTable="columnstrLvl2" msprop:Generator_ColumnPropNameInRow="strLvl2" msprop:Generator_ColumnPropNameInTable="strLvl2Column" msprop:Generator_UserColumnName="strLvl2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strLvl3" msprop:Generator_ColumnVarNameInTable="columnstrLvl3" msprop:Generator_ColumnPropNameInRow="strLvl3" msprop:Generator_ColumnPropNameInTable="strLvl3Column" msprop:Generator_UserColumnName="strLvl3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strDesc" msprop:Generator_ColumnVarNameInTable="columnstrDesc" msprop:Generator_ColumnPropNameInRow="strDesc" msprop:Generator_ColumnPropNameInTable="strDescColumn" msprop:Generator_UserColumnName="strDesc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" msprop:Generator_UserColumnName="TOTAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTALF" msprop:Generator_ColumnVarNameInTable="columnTOTALF" msprop:Generator_ColumnPropNameInRow="TOTALF" msprop:Generator_ColumnPropNameInTable="TOTALFColumn" msprop:Generator_UserColumnName="TOTALF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="intGLNumber" msprop:Generator_ColumnVarNameInTable="columnintGLNumber" msprop:Generator_ColumnPropNameInRow="intGLNumber" msprop:Generator_ColumnPropNameInTable="intGLNumberColumn" msprop:Generator_UserColumnName="intGLNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblBudgets" msprop:Generator_TableClassName="tblBudgetsDataTable" msprop:Generator_TableVarName="tabletblBudgets" msprop:Generator_TablePropName="tblBudgets" msprop:Generator_RowDeletingName="tblBudgetsRowDeleting" msprop:Generator_RowChangingName="tblBudgetsRowChanging" msprop:Generator_RowEvHandlerName="tblBudgetsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblBudgetsRowDeleted" msprop:Generator_UserTableName="tblBudgets" msprop:Generator_RowChangedName="tblBudgetsRowChanged" msprop:Generator_RowEvArgName="tblBudgetsRowChangeEvent" msprop:Generator_RowClassName="tblBudgetsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="uidCenterID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnuidCenterID" msprop:Generator_ColumnPropNameInRow="uidCenterID" msprop:Generator_ColumnPropNameInTable="uidCenterIDColumn" msprop:Generator_UserColumnName="uidCenterID" type="xs:string" />
+              <xs:element name="strLvl1" msprop:Generator_ColumnVarNameInTable="columnstrLvl1" msprop:Generator_ColumnPropNameInRow="strLvl1" msprop:Generator_ColumnPropNameInTable="strLvl1Column" msprop:Generator_UserColumnName="strLvl1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strLvl2" msprop:Generator_ColumnVarNameInTable="columnstrLvl2" msprop:Generator_ColumnPropNameInRow="strLvl2" msprop:Generator_ColumnPropNameInTable="strLvl2Column" msprop:Generator_UserColumnName="strLvl2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strLvl3" msprop:Generator_ColumnVarNameInTable="columnstrLvl3" msprop:Generator_ColumnPropNameInRow="strLvl3" msprop:Generator_ColumnPropNameInTable="strLvl3Column" msprop:Generator_UserColumnName="strLvl3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strLvl4" msprop:Generator_ColumnVarNameInTable="columnstrLvl4" msprop:Generator_ColumnPropNameInRow="strLvl4" msprop:Generator_ColumnPropNameInTable="strLvl4Column" msprop:Generator_UserColumnName="strLvl4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Account" msprop:Generator_ColumnVarNameInTable="columnAccount" msprop:Generator_ColumnPropNameInRow="Account" msprop:Generator_ColumnPropNameInTable="AccountColumn" msprop:Generator_UserColumnName="Account">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Desc" msprop:Generator_ColumnVarNameInTable="columnDesc" msprop:Generator_ColumnPropNameInRow="Desc" msprop:Generator_ColumnPropNameInTable="DescColumn" msprop:Generator_UserColumnName="Desc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="decBudget" msprop:Generator_ColumnVarNameInTable="columndecBudget" msprop:Generator_ColumnPropNameInRow="decBudget" msprop:Generator_ColumnPropNameInTable="decBudgetColumn" msprop:Generator_UserColumnName="decBudget" type="xs:decimal" />
+              <xs:element name="ExchangeRate" msprop:Generator_ColumnVarNameInTable="columnExchangeRate" msprop:Generator_ColumnPropNameInRow="ExchangeRate" msprop:Generator_ColumnPropNameInTable="ExchangeRateColumn" msprop:Generator_UserColumnName="ExchangeRate" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
